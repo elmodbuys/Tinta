@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
+    --bg: #f5f2ee;
+    --text: #111118;
+    --accent: #3b5bdb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+}
+
+.swatch {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+.swatch-colour {
+    height: 100vh;
+    background-color: darkgray;
+    transition: background-color 0.5s ease;
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg);
+    color: var(--text);
+    position: relative;
+}
+
+header {
+    padding: 1rem;
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    color: #f0ede8;
+    z-index: 10;
+}
+
+.swatch-info {
+    padding: 1rem;
+    background-color: #1a1a1a1a;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+button {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid #333;
+    padding: 1rem;
+    font-size: 16px;
+    color: var(--text);
+    border-radius: 16px;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+    color: #f0ede8;
+}
+
+.button-container {
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    bottom: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 0.25rem;
+    line-height: 1;
+}
+
+header p {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    opacity: 0.6;
+}
