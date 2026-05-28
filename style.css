@@ -91,3 +91,42 @@ header p {
     letter-spacing: 0.2em;
     opacity: 0.6;
 }
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .swatch-colour {
+        height: 20vh;
+    }
+
+    header {
+        position: relative;
+        top: auto;
+        left: auto;
+        background: transparent;
+        color: #1a1a1a;
+        background-color: transparent;
+    }
+
+    .button-container {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        transform: none;
+        padding: 1.5rem;
+        background: transparent;
+        background-color: transparent;
+    }
+
+    body {
+        background: transparent;
+        background-color: transparent;
+    }
+
+    button {
+        color: #1a1a1a;
+        border-color: #1a1a1a;
+    }
+}
